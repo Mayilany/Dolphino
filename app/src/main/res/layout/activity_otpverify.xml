@@ -4,50 +4,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LogInActivity"
     android:background="@drawable/back"
-    >
+    tools:context=".OTPVerifyActivity">
 
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="LogIn"
-        android:textColor="@color/black"
-        android:textIsSelectable="true"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.303" />
 
     <EditText
-        android:id="@+id/editTextLoginUserName"
+        android:id="@+id/OTPPhone"
         android:layout_width="303dp"
         android:layout_height="39dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/btn_bg"
-        android:drawableLeft="@drawable/user"
+        android:drawableLeft="@drawable/phone"
         android:drawablePadding="5dp"
         android:ems="10"
-        android:hint="Username"
-        android:inputType="text"
+        android:hint="Mobile No"
+        android:inputType="number"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
+        android:phoneNumber="true"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-
     <EditText
-        android:id="@+id/editTextLogInPassword"
+        android:id="@+id/EnterOTP"
         android:layout_width="303dp"
         android:layout_height="39dp"
         android:layout_marginTop="36dp"
@@ -55,47 +39,48 @@
         android:drawableLeft="@drawable/password"
         android:drawablePadding="5dp"
         android:ems="10"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:hint="Enter OTP"
+        android:inputType="number"
         android:paddingLeft="20dp"
         android:paddingTop="10dp"
         android:paddingRight="10dp"
         android:paddingBottom="10dp"
+        android:password="true"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLoginUserName" />
+        app:layout_constraintTop_toBottomOf="@+id/OTPPhone" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:text="OTP Verification"
+        android:textColor="@color/black"
+        android:textIsSelectable="true"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="303dp"
+        android:layout_width="305dp"
         android:layout_height="39dp"
-        android:layout_marginTop="60dp"
 
+        android:layout_marginTop="52dp"
         android:background="@drawable/btn_bg"
         android:backgroundTint="@color/PreCare_Blue"
-        android:text="LogIn"
+        android:text="Verify"
         android:textColorHighlight="@color/purple_700"
         android:textColorLink="@color/purple_700"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextLogInPassword" />
-
-
-
-    <TextView
-        android:id="@+id/textViewNewUser"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="Register for New User"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/EnterOTP" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "463932208923",
+    "firebase_url": "https://dolphino-95fc9-default-rtdb.firebaseio.com",
+    "project_id": "dolphino-95fc9",
+    "storage_bucket": "dolphino-95fc9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:463932208923:android:c87824667ebb62222e45be",
+        "android_client_info": {
+          "package_name": "com.example.dolphino"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDypzP2d7DYrR0te7FNOPErp8a4E2hB2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
